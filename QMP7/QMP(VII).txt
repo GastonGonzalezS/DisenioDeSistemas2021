@@ -1,0 +1,109 @@
+
+-- QMP 7 -- 
+---------------------------------------------------------------------
+ GET 	/QueMePongo/{id_usuario}/{id_guardaropa}/Prendas
+ 
+ {
+	{
+		"id_prenda": 1
+		"tipo": "Pantalon",
+		"talle": "M",
+	},
+  
+	{
+		"id_prenda": 2
+		"tipo": "Remera",
+		"talle": "XS",
+	}
+  }
+  
+  Codigo respuesta: 200,404,300
+---------------------------------------------------------------------
+
+ POST 	/QueMePongo/{id_usuario}/{id_guardaropa}/Prendas
+ 
+ {
+  "id_prenda": 1
+  "tipo": "Pantalon",
+  "talle": "M",
+  }
+  
+  Codigo respuesta: 200,300,400
+  
+---------------------------------------------------------------------
+ 
+ GET	/QueMePongo/{id_usuario}/{id_guardaropa}/{id_prenda}
+ 
+ {
+  "id_prenda": 1
+  "tipo": "Pantalon",
+  "talle": "M",
+  }
+  
+  Codigo respuesta: 200,404,300
+  
+---------------------------------------------------------------------
+ DELETE	/QueMePongo/{id_usuario}/{id_guardaropa}/{id_prenda}
+
+ Codigo respuesta: 200,404,300
+ 
+---------------------------------------------------------------------
+ GET	/QueMePongo/{id_usuario}/Eventos
+ {
+	{
+		"id_evento": 1,
+		"tipo": "formal",
+		"nombre": "reunion ejecutiva"
+	},
+	{
+		"id_evento": 2,
+		"tipo": "informal",
+		"nombre": "comida familiar"
+	}
+ }
+ 
+ Codigo respuesta: 200,404,300
+---------------------------------------------------------------------
+ 
+ GET	/QueMePongo/{id_usuario}/{id_evento}/Sugerencias
+ 
+ {
+	"id_evento": 1,
+	"tipo": "formal",
+	"nombre": "reunion ejecutiva"
+ }
+ 
+ Codigo respuesta: 200,404,300
+ 
+----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
